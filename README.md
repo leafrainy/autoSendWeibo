@@ -19,12 +19,12 @@ $weibo = new autoSendWeibo($config);
 $weibo->getCode();
 ```
 
-#### 4.获取access_token，顺次执行下面的方法，获得access_token.将获取到的access_token填写到类文件中的private $access_token="";中
+#### 4.获取access_token，先注释掉第三步的方法，然后顺次执行下面的方法，获得access_token.将获取到的access_token填写到类文件中的private $access_token="";中
 ```
 $weibo->getAccessToken();
 ```
 
-#### 5.以上就获得了必要的所有信息，填写进类中后，第三步和第四部即可注释。后面按照个人喜好玩耍。注意，上述步骤必须依次来，先配置-->得code（有效期十几分钟）-->得access_token（有效期理论30天）
+#### 5.以上就获得了必要的所有信息，填写进类中后，第三步和第四步即可注释。后面按照个人喜好玩耍。注意，上述步骤必须依次来，先配置-->得code（有效期十几分钟）-->得access_token（有效期理论30天）
 
 #### 6.获取必应图片并下载至本地【存储路径为 img/】
 ```
